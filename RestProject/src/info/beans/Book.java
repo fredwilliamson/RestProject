@@ -11,11 +11,35 @@ public class Book {
 
 	private String title;
 	
-	private String author;
+	private String price;
+	
+	private Author author;
+	
+	private String id;
 
-	public Book(String title, String author) {
+	
+
+	public Book(String title, String price, Author author, String id) {
 		super();
 		this.title = title;
+		this.price = price;
+		this.author = author;
+		this.id = id;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public Author getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(Author author) {
 		this.author = author;
 	}
 
@@ -27,12 +51,12 @@ public class Book {
 		this.title = title;
 	}
 
-	public String getAuthor() {
-		return author;
+	public String getPrice() {
+		return price;
 	}
 
-	public void setAuthor(String author) {
-		this.author = author;
+	public void setPrice(String price) {
+		this.price = price;
 	}
 	
 }
